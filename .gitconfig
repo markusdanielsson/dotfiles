@@ -1,0 +1,9 @@
+[user]
+	email = markus_danielsson@live.se
+	name = Markus Danielsson
+[credential]
+	helper = store
+[merge]
+	tool = kdiff3
+[diff]
+	tool = kdiff3
