@@ -152,3 +152,4 @@ source /usr/bin/virtualenvwrapper.sh
 alias ll="ls -l"
 alias gs="git status"
 alias hello="echo 'Hello world'"
+alias bajs="echo 'bajs'"
