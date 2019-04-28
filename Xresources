@@ -14,45 +14,47 @@ XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 
-*background:                      #222D31
-*foreground:                      #d8d8d8
 *fading:                          8
 *fadeColor:                       black
-*cursorColor:                     #1ABB9B
 *pointerColorBackground:          #2B2C2B
 *pointerColorForeground:          #16A085
 
-!! black dark/light
-*color0:                          #222D31
-*color8:                          #585858
+! special
+*.foreground:   #d0d0d0
+*.background:   [90]#151515
+*.cursorColor:  #d0d0d0
 
-!! red dark/light
-*color1:                          #ab4642
-*color9:                          #ab4642
+! black
+*.color0:       #151515
+*.color8:       #505050
 
-!! green dark/light
-*color2:                          #7E807E
-*color10:                         #8D8F8D
+! red
+*.color1:       #fb9fb1
+*.color9:       #fb9fb1
 
-!! yellow dark/light
-*color3:                          #f7ca88
-*color11:                         #f7ca88
+! green
+*.color2:       #acc267
+*.color10:      #acc267
 
-!! blue dark/light
-*color4:                          #7cafc2
-*color12:                         #7cafc2
+! yellow
+*.color3:       #ddb26f
+*.color11:      #ddb26f
 
-!! magenta dark/light
-*color5:                          #ba8baf
-*color13:                         #ba8baf
+! blue
+*.color4:       #6fc2ef
+*.color12:      #6fc2ef
 
-!! cyan dark/light
-*color6:                          #1ABB9B
-*color14:                         #1ABB9B
+! magenta
+*.color5:       #e1a3ee
+*.color13:      #e1a3ee
 
-!! white dark/light
-*color7:                          #d8d8d8
-*color15:                         #f8f8f8
+! cyan
+*.color6:       #12cfc0
+*.color14:      #12cfc0
+
+! white
+*.color7:       #d0d0d0
+*.color15:      #f5f5f5
 
 Xcursor.theme: xcursor-breeze
 Xcursor.size:                     0
@@ -65,12 +67,9 @@ URxvt.font:                       xft:monospace:size=13
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [90]#222D31
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
-URxvt*background:                 black
-URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines
