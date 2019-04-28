@@ -245,6 +245,30 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
+# Move window (you can also use the mouse for that)
+bindsym $mod+m mode "move"
+mode "move" {
+        # These bindings trigger as soon as you enter the move mode
+        # Pressing left will move the window to the left.
+        # Pressing right will move the window to the right.
+        # Pressing up will move the window up.
+        # Pressing down will move the window down.
+        bindsym j move down 10 px
+        bindsym k move up 10 px
+        bindsym h move left 10 px
+        bindsym l move right 10 px
+
+        # same bindings, but for the arrow keys
+        bindsym Left move left 20 px
+        bindsym Down move down 20 px
+        bindsym Up move up 20 px
+        bindsym Right move right 20 px
+
+        # exit resize mode: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
@@ -253,16 +277,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+        bindsym j resize shrink height 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 20 px or 20 ppt
+        bindsym Down resize shrink height 20 px or 20 ppt
+        bindsym Up resize grow height 20 px or 20 ppt
+        bindsym Right resize grow width 20 px or 20 ppt
 
         # exit resize mode: Enter or Escape
         bindsym Return mode "default"
@@ -349,7 +373,7 @@ bar {
 }
 
 # hide/unhide i3status bar
-bindsym $mod+m bar mode toggle
+# bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
